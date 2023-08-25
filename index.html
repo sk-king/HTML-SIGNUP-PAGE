@@ -4,33 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Form</title>
-</head>
-<body background="bg.jpg" >
 
-    <table align="center" style="text-c">
-    <h1 align="center" style="color: white;">Signup Form</h1>
-    <tr> <td>First Name <td><input type="text"></td></tr>
-    <tr> <td>First Name <td><input type="text"></td></tr>
-    <tr> <td>Last Name <td><input type="text"></td>></tr>
-    <tr> <td>Email <td><input type="text"> </td></tr>
-    <tr> <td>Password <td><input type="text"> </td></tr>
-    <tr> <td>Confirm Password <td><input type="text"></td></tr>
-    <tr> <td>Gender <td><input type="radio"> Male <input type="radio"> Female </td></tr>
-    <tr> <td>Comment <td><input type="comment"></td></tr>
-    <tr> <td><input type="Submit"></td></tr></table>
+    <style>
+        body {
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          text-emphasis-color: white;
+        }
+        
+    table {
+        color: white;
+        background-color: black;
+        border-radius: 50px;
+        width: 500px;
+    }
+    #btn{
+        background-color: green;
+        color: white;
+        height: 35px;
+        width: 90px;
+        border-radius: 25px;
+    }
+    </style>
+</head>
+<body background="bg.jpg">
+    <br><br><br><br>
+    
+    <table align="center" border="0" cellspacing="15">
+        <form>
+    <tr><td align="center" colspan="2"><h1>Signup Form</h1></td></tr>
+        
+    <tr> <td>First Name: <td><input type="text" placeholder="Last Name" required></td></tr>
+    <tr> <td>Last Name: <td><input type="text" placeholder="Last Name" required></td>></tr>
+    <tr> <td>Email: <td><input type="text" placeholder="Email" required> </td></tr>
+    <tr> <td>Password: <td><input type="text" placeholder="Password" required> </td></tr>
+    <tr> <td>Confirm Password: <td><input type="text" placeholder="Confirm Password" required></td></tr>
+    <tr> <td>Gender: <td><input type="radio" name="r1" required> Male <input type="radio" name="r1" required> Female </td></tr>
+    <tr> <td>Comment: <td><input type="comment"></td></tr>
+    <tr> <td align="center" colspan="2"><a href="Login.html"><input type="Submit" id="btn"  ></a></td></tr>
+    <tr><td align="center"  colspan="2"> or <br> <a href="Login.html"> Login </a> </td></tr>
+</form>
+</table>
     
 </body>
 </html>
 
-<style>
-    body {
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      text-emphasis-color: white;
-    }
-    
-tr {
-    color: white;
-}
-</style>
